@@ -37,11 +37,13 @@ header {
 			font-size: 7rem;
 			font-weight: 400;
 			letter-spacing: 35px;
+			animation: moveInLeft 1s ease-out;
 		}
 		&__sub {
 			font-size: 3.1rem;
 			letter-spacing: 20px;
 			font-weight: 700;
+			animation: moveInRight 1s ease-out;
 		}
 	}
 }
