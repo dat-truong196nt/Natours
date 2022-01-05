@@ -29,7 +29,8 @@
 	}
 
 	&--animation {
-		animation: moveInBottom 1s ease-out;
+		animation: moveInBottom 0.25s ease-out 0.75s;
+		animation-fill-mode: backwards;
 	}
 
 	&::after {
