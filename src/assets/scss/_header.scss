@@ -26,12 +26,12 @@ header {
 	left: 50%;
 	top: 40%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .heading {
 	&-primary {
 		color: white;
-		text-align: center;
 		text-transform: uppercase;
 		&__main {
 			font-size: 7rem;
