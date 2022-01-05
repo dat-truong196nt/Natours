@@ -10,7 +10,7 @@ export const Header = () => (
 				<div className='heading-primary__main'>Out doors</div>
 				<div className='heading-primary__sub'>is where life happens</div>
 			</div>
-			<div className='btn btn--primary'>Discover our tour</div>
+			<div className='btn btn-primary btn--animation'>Discover our tour</div>
 		</div>
 	</header>
 )
