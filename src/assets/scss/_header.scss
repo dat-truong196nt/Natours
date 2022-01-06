@@ -1,4 +1,4 @@
-header {
+.header {
 	height: 95vh;
 	background-image:
 		linear-gradient(
@@ -10,39 +10,38 @@ header {
 	background-size: cover;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	position: relative;
-}
 
-.logo {
-	position: absolute;
-	top: 4rem;
-	left: 4rem;
-	&__item {
+	&__logo {
 		height: 3.5rem;
+
+		&-box {
+			position: absolute;
+			top: 4rem;
+			left: 4rem;
+		}
+	}
+
+	&__box-text {
+		position: absolute;
+		left: 50%;
+		top: 40%;
+		transform: translate(-50%, -50%);
+		text-align: center;
 	}
 }
 
-.box-text {
-	position: absolute;
-	left: 50%;
-	top: 40%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.heading {
-	&-primary {
-		color: white;
-		text-transform: uppercase;
-		&__main {
-			font-size: 7rem;
-			letter-spacing: 3.5rem;
-			animation: moveInLeft 1s ease-out;
-		}
-		&__sub {
-			font-size: 3.1rem;
-			letter-spacing: 2rem;
-			font-weight: 700;
-			animation: moveInRight 1s ease-out;
-		}
+.heading-primary {
+	color: white;
+	text-transform: uppercase;
+	&--main {
+		font-size: 7rem;
+		letter-spacing: 3.5rem;
+		animation: moveInLeft 1s ease-out;
+	}
+	&--sub {
+		font-size: 3.1rem;
+		letter-spacing: 2rem;
+		font-weight: 700;
+		animation: moveInRight 1s ease-out;
 	}
 }
