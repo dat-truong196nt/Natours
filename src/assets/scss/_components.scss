@@ -1,9 +1,9 @@
 .btn {
 	display: inline-block;
 	font-size: 2.2rem;
-	font-weight: 700px;
-	padding: 15px 40px;
-	border-radius: 40px;
+	font-weight: 700;
+	padding: 1.5rem 4rem;
+	border-radius: 4rem;
 	cursor: pointer;
 	transition: all 0.2s;
 	text-transform: uppercase;
@@ -14,8 +14,8 @@
 	}
 
 	&:hover {
-		transform: translateY(-10px);
-		box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+		transform: translateY(-1rem);
+		box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 
 		&::after {
 			transform: scaleX(1.4) scaleY(1.6);
@@ -24,8 +24,8 @@
 	}
 
 	&:active {
-		transform: translateY(-5px);
-		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		transform: translateY(-.5rem);
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 	}
 
 	&--animation {
@@ -40,7 +40,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		border-radius: 40px;
+		border-radius: 4rem;
 		transition: all 0.2s ease-in;
 		z-index: -1;
 	}
