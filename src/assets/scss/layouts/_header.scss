@@ -6,7 +6,7 @@
 			rgba($color-light-green, 0.8),
 			rgba($color-medium-green, 0.8)
 		),
-		url(../img/hero.jpg);
+		url(../../img/hero.jpg);
 	background-size: cover;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	position: relative;
@@ -27,21 +27,5 @@
 		top: 40%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-	}
-}
-
-.heading-primary {
-	color: white;
-	text-transform: uppercase;
-	&--main {
-		font-size: 7rem;
-		letter-spacing: 3.5rem;
-		animation: moveInLeft 1s ease-out;
-	}
-	&--sub {
-		font-size: 3.1rem;
-		letter-spacing: 2rem;
-		font-weight: 700;
-		animation: moveInRight 1s ease-out;
 	}
 }
