@@ -1,0 +1,26 @@
+.card {
+	background-color: rgba($color-white, .8);
+	border-radius: .3rem;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 3rem;
+	transition: all .2s;
+	box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+
+	&:hover {
+		transform: scale(1.05) translateY(-2rem);
+	}
+
+	&__icon {
+		background: linear-gradient(to right, $color-light-green, $color-dark-green);
+		background-clip: text;
+		color: transparent;
+		font-size: 7rem;
+		padding: 1rem;
+		margin-bottom: .5rem;
+	}
+
+	&__text {
+		font-weight: 500;
+	}
+}
