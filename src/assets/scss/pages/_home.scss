@@ -1,5 +1,19 @@
 .section-about {
 	background-color: $color-grey-light;
-	padding: 20vh 0;
+	height: 95vh;
+	padding-top: 20vh;
+	margin-top: -20vh;
+}
+
+.section-feature {
+	height: 95vh;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-medium-green, .8),
+			rgba($color-dark-green, .8)
+		),
+		url("../../img/nat-4.jpg");
+	background-size: cover;
+	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 	margin-top: -20vh;
 }
