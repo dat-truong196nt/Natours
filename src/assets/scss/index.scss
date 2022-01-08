@@ -3,15 +3,20 @@
 // abstract
 @import './abstracts/fonts';
 @import './abstracts/variables';
-@import './abstracts/helpers';
 @import './abstracts/animation';
 
 // base
 @import './base/reset';
 @import './base/typography';
+@import './base/helpers';
 
 // layouts
 @import './layouts/header';
+@import './layouts/grid';
+
+//pages
+@import './pages/home';
 
 // compoments
-@import './components/button'
+@import './components/button';
+@import './components/compisition';

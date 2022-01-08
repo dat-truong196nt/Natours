@@ -15,7 +15,7 @@
 
 	&:hover {
 		transform: translateY(-1rem);
-		box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
 		&::after {
 			transform: scaleX(1.4) scaleY(1.6);
@@ -25,7 +25,7 @@
 
 	&:active {
 		transform: translateY(-.5rem);
-		box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+		box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
 	}
 
 	&--animation {
@@ -47,8 +47,30 @@
 
 	&--primary {
 		&, &::after {
-			color: $color-default;
+			color: $color-grey-dark;
 			background-color: white;
+		}
+	}
+
+	&--secondary {
+		display: inline-block;
+		color: $color-medium-green;
+		font-weight: 600;
+		cursor: pointer;
+		padding: .3rem;
+		text-decoration: none;
+		border-bottom: 1px solid $color-medium-green;
+		transition: all .2s;
+
+		&:hover {
+			background-color: $color-medium-green;
+			color: $color-grey-light;
+			transform: translateY(-.2rem);
+			box-shadow: 0 1rem 2rem rgba($color-black, .15);
+		}
+		&:active {
+			transform: translateY(0);
+			box-shadow: 0 .5rem 1rem rgba($color-black, .15);
 		}
 	}
 }
