@@ -4,7 +4,6 @@
 @import './abstracts/fonts';
 @import './abstracts/variables';
 @import './abstracts/animation';
-@import './abstracts/linea-basic.css';
 
 // base
 @import './base/reset';
@@ -21,3 +20,6 @@
 // compoments
 @import './components/button';
 @import './components/composition';
+
+// vendors
+@import './vendors/linea-basic.css';
