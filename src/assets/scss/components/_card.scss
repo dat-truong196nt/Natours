@@ -30,6 +30,7 @@
 	perspective: 150rem;
 	color: $color-grey-dark;
 	position: relative;
+	margin: 0 3rem;
 
 	&__side {
 		height: 50rem;
@@ -110,6 +111,28 @@
 			& li:not(:last-child) {
 				border-bottom: 1px solid rgba($color-grey-dark, .3);
 			}
+		}
+	}
+
+	&__cta {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		color: $color-white;
+		text-align: center;
+	}
+
+	&__price {
+		&-only {
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+
+		&-value {
+			margin-bottom: 5rem;
+			font-weight: 200;
+			font-size: 8rem;
 		}
 	}
 }

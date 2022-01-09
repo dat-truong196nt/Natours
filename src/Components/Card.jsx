@@ -27,8 +27,14 @@ export const CardFlip = ({front, back}) => {
 				</div>
 			</div>
 			<div className="cardflip__side cardflip__side--back">
-				<div className="cardflip-back__price">{`$${back.price}`}</div>
-				<div className="btn btn--primary">book now</div>
+				<div className="cardflip__cta">
+					<div className="cardflip__price-box">
+						<p className="cardflip__price-only">Only</p>
+						<div className="cardflip__price-value">{`$${back.price}`}</div>
+					</div>
+					<a href="##" className="btn btn--white">book now</a>
+				</div>
+
 			</div>
 		</div>
 	)

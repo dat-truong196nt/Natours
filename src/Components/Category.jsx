@@ -13,7 +13,7 @@ export const Category = () => (
 						heading: 'the sea explorer',
 						info: {day: 3, slot: 30, guide: 2, sleep: 'cozy hotels', rank: 'easy'}
 					}}
-					back={{price: 20}}
+					back={{price: 297}}
 				/>
 			</div>
 			<div className="col-1-3">
