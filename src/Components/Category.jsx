@@ -7,6 +7,7 @@ export const Category = () => (
 		</div>
 		<div className="row">
 			<div className="col-1-3">
+				<br/>
 				<CardFlip
 					front={{
 						index: 1,
@@ -17,8 +18,27 @@ export const Category = () => (
 				/>
 			</div>
 			<div className="col-1-3">
+				<br/>
+				<CardFlip
+					front={{
+						index: 2,
+						heading: 'the forest hiking',
+						info: {day: 7, slot: 40, guide: 6, sleep: 'provided tents', rank: 'medium'}
+					}}
+					back={{price: 769}}
+				/>
 			</div>
-			<div className="col-1-3"></div>
+			<div className="col-1-3">
+				<br/>
+				<CardFlip
+					front={{
+						index: 3,
+						heading: 'the winter skiing',
+						info: {day: 5, slot: 15, guide: 3, sleep: 'provided tents', rank: 'hard'}
+					}}
+					back={{price: 479}}
+				/>
+			</div>
 		</div>
 	</section>
 )

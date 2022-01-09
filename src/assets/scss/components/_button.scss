@@ -55,16 +55,16 @@
 
 	&--secondary {
 		display: inline-block;
-		color: $color-medium-green;
+		color: $color-green-medium;
 		font-weight: 600;
 		cursor: pointer;
 		padding: .3rem;
 		text-decoration: none;
-		border-bottom: 1px solid $color-medium-green;
+		border-bottom: 1px solid $color-green-medium;
 		transition: all .2s;
 
 		&:hover {
-			background-color: $color-medium-green;
+			background-color: $color-green-medium;
 			color: $color-grey-light;
 			transform: translateY(-.2rem);
 			box-shadow: 0 1rem 2rem rgba($color-black, .15);

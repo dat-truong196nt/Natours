@@ -4,7 +4,7 @@
 	text-align: center;
 	font-size: 1.5rem;
 	padding: 3rem;
-	transition: all .2s;
+	transition: all .1s;
 	box-shadow: 0 .5rem 1rem rgba($color-black, .5);
 
 	&:hover {
@@ -12,7 +12,7 @@
 	}
 
 	&__icon {
-		background: linear-gradient(to right, $color-light-green, $color-dark-green);
+		background: linear-gradient(to right, $color-green-light, $color-green-dark);
 		background-clip: text;
 		color: transparent;
 		font-size: 7rem;
@@ -50,7 +50,17 @@
 
 		&--back {
 			transform: rotateY(-180deg);
-			background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+			&-1 {
+				background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+			}
+
+			&-2 {
+				background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+			}
+
+			&-3 {
+				background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+			}
 		}
 	}
 
@@ -73,6 +83,16 @@
 			background-color: $color-orange-light;
 			background-image: url('../../img/nat-5.jpg');
 		}
+
+		&--2 {
+			background-color: $color-blue-light;
+			background-image: url('../../img/nat-6.jpg');
+		}
+
+		&--3 {
+			background-color: $color-green-light;
+			background-image: url('../../img/nat-7.jpg');
+		}
 	}
 
 	&__heading {
@@ -83,7 +103,7 @@
 		position: absolute;
 		top: 18rem;
 		right: 2rem;
-		width: 50%;
+		width: 60%;
 	}
 
 	&__heading-span {
@@ -96,6 +116,22 @@
 				to right,
 				rgba($color-orange-light, .85),
 				rgba($color-orange-dark, .85)
+			);
+		}
+
+		&--2 {
+			background-image: linear-gradient(
+				to right,
+				rgba($color-blue-light, .85),
+				rgba($color-blue-dark, .85)
+			);
+		}
+
+		&--3 {
+			background-image: linear-gradient(
+				to right,
+				rgba($color-green-light, .85),
+				rgba($color-green-dark, .85)
 			);
 		}
 	}

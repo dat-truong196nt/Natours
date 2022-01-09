@@ -14,7 +14,7 @@ export const CardFlip = ({front, back}) => {
 			<div className="cardflip__side cardflip__side--front">
 				<div className={`cardflip__picture cardflip__picture--${front.index}`}></div>
 				<h4 className="cardflip__heading">
-					<span className="cardflip__heading-span cardflip__heading-span--1">{front.heading}</span>
+					<span className={`cardflip__heading-span cardflip__heading-span--${front.index}`}>{front.heading}</span>
 				</h4>
 				<div className="cardflip__details">
 					<ul>
@@ -26,7 +26,7 @@ export const CardFlip = ({front, back}) => {
 					</ul>
 				</div>
 			</div>
-			<div className="cardflip__side cardflip__side--back">
+		<div className={`cardflip__side cardflip__side--back cardflip__side--back-${front.index}`}>
 				<div className="cardflip__cta">
 					<div className="cardflip__price-box">
 						<p className="cardflip__price-only">Only</p>
