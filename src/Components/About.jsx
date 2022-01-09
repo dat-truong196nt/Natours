@@ -5,8 +5,10 @@ import photo_nat_3 from '../assets/img/nat-3-large.jpg'
 export const About = () => {
 	return (
 		<section className="section-about">
-			<div className="heading-secondary">
-				Exciting tours for adventurous people
+			<div className="text-center">
+				<div className="heading-secondary">
+					Exciting tours for adventurous people
+				</div>
 			</div>
 			<div className="row">
 				<div className="col-1-2">

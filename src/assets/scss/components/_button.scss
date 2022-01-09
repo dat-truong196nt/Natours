@@ -8,6 +8,7 @@
 	transition: all 0.2s;
 	text-transform: uppercase;
 	position: relative;
+	user-select: none;
 
 	&:link, &:visited {
 		text-decoration: none;
