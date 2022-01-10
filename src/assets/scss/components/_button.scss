@@ -82,4 +82,12 @@
 			font-size: 1.6rem;
 		}
 	}
+
+	&--green {
+		&, &::after {
+			color: white;
+			background-color: $color-green-dark;
+			font-size: 1.8rem;
+		}
+	}
 }

@@ -3,11 +3,10 @@ import { CardFlip } from "./Card"
 export const Category = () => (
 	<section className="section-category">
 		<div className="text-center">
-			<div className="heading-secondary">most popular tours</div>
+			<h2 className="heading-secondary">most popular tours</h2>
 		</div>
 		<div className="row">
 			<div className="col-1-3">
-				<br/>
 				<CardFlip
 					front={{
 						index: 1,
@@ -18,7 +17,6 @@ export const Category = () => (
 				/>
 			</div>
 			<div className="col-1-3">
-				<br/>
 				<CardFlip
 					front={{
 						index: 2,
@@ -29,7 +27,6 @@ export const Category = () => (
 				/>
 			</div>
 			<div className="col-1-3">
-				<br/>
 				<CardFlip
 					front={{
 						index: 3,
@@ -39,6 +36,9 @@ export const Category = () => (
 					back={{price: 479}}
 				/>
 			</div>
+		</div>
+		<div className="text-center">
+			<a href="##" className="btn btn--green">discover all tours</a>
 		</div>
 	</section>
 )
