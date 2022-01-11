@@ -3,6 +3,7 @@
 	height: 100vh;
 	padding-top: 20vh;
 	margin-top: -20vh;
+	margin-bottom: 10vh;
 }
 
 .section-feature {
@@ -24,6 +25,11 @@
 
 .section-category {
 	background-color: $color-grey-light;
-	padding: 20rem 0 50rem 0;
+	padding: 20rem 0 10rem 0;
 	margin-top: -10vh;
+}
+
+.section-story {
+	position: relative;
+	padding-bottom: 5rem;
 }
