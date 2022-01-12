@@ -5,15 +5,19 @@ import { Feature } from "../../Components/Feature";
 import { Category } from "../../Components/Category";
 import { Story } from "../../Components/Story";
 import { Booking } from "../../Components/Booking/Booking";
+import { Footer } from "../../Components/Footer";
 
 export const Home = () => (
 	<>
 		<Header/>
-		{/* <Grid/> */}
-		<About/>
-		<Feature/>
-		<Category/>
-		<Story/>
-		<Booking/>
+		<main>
+			{/* <Grid/> */}
+			<About/>
+			<Feature/>
+			<Category/>
+			<Story/>
+			<Booking/>
+		</main>
+		<Footer/>
 	</>
 )

@@ -1,0 +1,53 @@
+.footer {
+	background-color: rgba(black, .8);
+	padding-bottom: 10rem;
+
+	&__logo-box {
+		text-align: center;
+		padding: 10rem;
+	}
+
+	&__logo-img {
+		width: 10%;
+	}
+
+	&__nav {
+		border-top: 1px solid rgba($color-white, .5);
+		padding-top: 1rem;
+		font-size: 1.7rem;
+		ul {
+			text-align: center;
+		}
+		ul li {
+			list-style: none;
+			display: inline-block;
+			padding: 0 1.5rem;
+			transition: all .2s;
+
+			a {
+				text-decoration: none;
+				&, &:link {
+					color: $color-white;
+					text-transform: uppercase;
+				}
+			}
+
+			&:hover {
+				box-shadow: 0 1rem 2rem black;
+				transform: rotateZ(6deg);
+				a {
+					color: $color-green-medium;
+				}
+			}
+		}
+	}
+
+	&__copyright {
+		border-top: 1px solid rgba($color-white, .5);
+		padding-top: 1rem;
+
+		a {
+			color: $color-white;
+		}
+	}
+}
