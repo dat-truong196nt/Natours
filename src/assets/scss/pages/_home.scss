@@ -33,3 +33,21 @@
 	position: relative;
 	padding-bottom: 5rem;
 }
+
+.section-booking {
+	background-image: linear-gradient(to right bottom, $color-green-medium, $color-green-dark);
+	padding: 15rem 0;
+}
+
+.booking {
+	margin: 0 10rem;
+	height: 100%;
+	background-image:
+		linear-gradient(
+			105deg,
+			rgba($color-white, .8) 50%,
+			transparent 50%
+		),
+		url("../../img/nat-10.jpg");
+	background-size: cover;
+}

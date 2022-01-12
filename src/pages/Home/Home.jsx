@@ -4,6 +4,7 @@ import { About } from "../../Components/About";
 import { Feature } from "../../Components/Feature";
 import { Category } from "../../Components/Category";
 import { Story } from "../../Components/Story";
+import { Booking } from "../../Components/Booking/Booking";
 
 export const Home = () => (
 	<>
@@ -13,5 +14,6 @@ export const Home = () => (
 		<Feature/>
 		<Category/>
 		<Story/>
+		<Booking/>
 	</>
 )
