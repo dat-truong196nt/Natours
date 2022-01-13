@@ -6,7 +6,7 @@ import video_webm from '../assets/img/video.webm'
 export const Story = () => (
 	<section className="section-story">
 		<div className="bg-video">
-			<video loop autoplay="autoplay" muted>
+			<video loop autoPlay="autoplay" muted>
 				<source src={video_mp4} type="video/mp4"/>
 				<source src={video_webm} type="video/webm"/>
 				Your browser is not supported!

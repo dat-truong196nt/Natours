@@ -1,0 +1,129 @@
+.navigation {
+	&__checkbox {
+		display: none;
+	}
+
+	&__toggle {
+		height: 7rem;
+		width: 7rem;
+		position: fixed;
+		top: 1.5rem;
+		right: 3.5rem;
+		cursor: pointer;
+		border-radius: 50%;
+		border: 0;
+		box-shadow: 0 1rem 3rem rgba(black, .3);
+		background-color: $color-white;
+		z-index: 102;
+	}
+
+	&__toggle:hover > &__icon::before {
+		top: -1rem;
+	}
+
+	&__toggle:hover > &__icon::after {
+		top: 1rem;
+	}
+
+	&__icon {
+		&,
+		&::before,
+		&::after {
+			content: "";
+			height: 3px;
+			width: 3rem;
+			background-color: black;
+			position: absolute;
+			transition: transform .2s;
+		}
+
+		& {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&::before { top: -.8rem;}
+
+		&::after { top: .8rem;}
+	}
+
+	&__background {
+		height: 6rem;
+		width: 6rem;
+		border-radius: 50%;
+		position: fixed;
+		top: 2rem;
+		right: 4rem;
+		background-image: radial-gradient($color-green-light, $color-green-dark);
+		transition: all .5s;
+		z-index: 100;
+	}
+
+	&__nav {
+		height: 100vh;
+		width: 0;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		transition: all .5s cubic-bezier(1,-0.11,.13,1.58);
+		z-index: 101;
+	}
+
+	&__list {
+		list-style: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	&__item {
+		padding: 1rem;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 1rem;
+		text-decoration: none;
+		font-weight: 300;
+		font-size: 3rem;
+		color: $color-white;
+		text-transform: uppercase;
+		background-image: linear-gradient(120deg, transparent 50%, $color-white 50%);
+		background-size: 230%;
+		transition: all .3s;
+
+		&:hover {
+			background-position: 100%;
+			color: $color-green-dark;
+			transform: translateX(1rem);
+		}
+	}
+
+	&__checkbox:checked ~ &__nav {
+		width: 100%;
+		opacity: 1;
+	}
+
+	&__checkbox:checked ~ &__background {
+		transform: scale(80);
+	}
+
+	&__checkbox:checked + &__toggle > &__icon::before {
+		left: 0;
+		top: 0;
+		transform: rotateZ(135deg);
+	}
+
+	&__checkbox:checked + &__toggle > &__icon::after {
+		left: 0;
+		top: 0;
+		transform: rotateZ(-135deg);
+	}
+	&__checkbox:checked + &__toggle > &__icon {
+		background-color: transparent;
+	}
+}
