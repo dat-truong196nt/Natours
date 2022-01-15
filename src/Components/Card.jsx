@@ -32,7 +32,7 @@ export const CardFlip = ({front, back}) => {
 						<p className="cardflip__price-only">Only</p>
 						<div className="cardflip__price-value">{`$${back.price}`}</div>
 					</div>
-					<a href="##" className="btn btn--white">book now</a>
+					<a href="#popup" className="btn btn--white">book now</a>
 				</div>
 
 			</div>
