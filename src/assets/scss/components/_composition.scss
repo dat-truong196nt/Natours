@@ -14,6 +14,12 @@
 		outline-offset: 1rem;
 		z-index: 0;
 
+		@include respond(phone) {
+			position: relative;
+			float: left;
+			width: 33.33%;
+		}
+
 		&:hover {
 			transform: scale(1.05) translateY(-.2rem);
 			box-shadow: 0 2rem 4rem rgba($color-black, .5);
@@ -24,16 +30,28 @@
 		&-1 {
 			left: 0;
 			top: -2rem;
+			@include respond(phone) {
+				left: 4rem;
+				top: 6rem;
+			}
 		}
 
 		&-2 {
 			right: 0;
 			top: 2rem;
+			@include respond(phone) {
+				left: 0;
+				z-index: 2;
+			}
 		}
 
 		&-3 {
 			top: 10rem;
 			left: 20%;
+			@include respond(phone) {
+				top: 6rem;
+				left: -4rem;
+			}
 		}
 	}
 }

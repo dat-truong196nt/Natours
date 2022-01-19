@@ -19,4 +19,12 @@ $default-font-size: 1.6rem;
 // Grid
 $grid-max-width: 144rem;
 $gap-vertical: 8rem;
+$gap-vertical-small: 2rem;
 $gap-horizontal: 8rem;
+$gap-horizontal-small: 2rem;
+
+// Breakpoint
+$breakpoint-phone:		37.5em;		// 600px
+$breakpoint-tab-port:	56.25em;	// 900px
+$breakpoint-tab-land:	75em;		// 1200px
+$breakpoint-big-desk:	112.5em;	// 1800px

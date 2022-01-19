@@ -1,12 +1,9 @@
-import img1 from '../assets/img/nat-8.jpg'
-import img2 from '../assets/img/nat-9.jpg'
-
 export const Popup = () => (
 	<div className="popup" id="popup">
 		<div className="popup__content">
 			<div className="popup__left">
-				<img src={img1} alt="img" className="popup__img" />
-				<img src={img2} alt="img" className="popup__img" />
+				<div className="popup__img popup__img--1"> </div>
+				<div className="popup__img popup__img--2"> </div>
 			</div>
 			<div className="popup__right">
 				<a href="#category" className="popup__close">&times;</a>

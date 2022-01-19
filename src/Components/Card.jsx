@@ -26,7 +26,7 @@ export const CardFlip = ({front, back}) => {
 					</ul>
 				</div>
 			</div>
-		<div className={`cardflip__side cardflip__side--back cardflip__side--back-${front.index}`}>
+			<div className={`cardflip__side cardflip__side--back cardflip__side--back-${front.index}`}>
 				<div className="cardflip__cta">
 					<div className="cardflip__price-box">
 						<p className="cardflip__price-only">Only</p>
@@ -34,7 +34,6 @@ export const CardFlip = ({front, back}) => {
 					</div>
 					<a href="#popup" className="btn btn--white">book now</a>
 				</div>
-
 			</div>
 		</div>
 	)
