@@ -1,8 +1,16 @@
-import logo from '../assets/img/logo-green-2x.png'
+import logo_small_1x from '../assets/img/logo-green-small-1x.png'
+import logo_small_2x from '../assets/img/logo-green-small-2x.png'
+import logo_1x from '../assets/img/logo-green-1x.png'
+import logo_2x from '../assets/img/logo-green-2x.png'
 
 export const Footer = () => (
 	<footer className="footer">
-		<div className="footer__logo-box"><img className="footer__logo-img" src={logo} alt="logo" /></div>
+		<div className="footer__logo-box">
+			<picture>
+				<source media="(max-width:37.5em)" srcset={`${logo_small_1x} 1x, ${logo_small_2x} 2x`}/>
+				<img className="footer__logo-img" srcSet={`${logo_1x} 1x, ${logo_2x} 2x`} alt="logo" />
+			</picture>
+		</div>
 		<div className="row">
 			<div className="col-1-2">
 				<div className="footer__nav">
