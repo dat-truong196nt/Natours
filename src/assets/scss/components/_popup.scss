@@ -19,6 +19,7 @@
 		transform: translate(-50%, -50%) scale(.5);
 		transition: all .3s;
 		display: table;
+		z-index: 201;
 	}
 
 	&__left {
@@ -77,7 +78,8 @@
 	}
 
 
-	&:target {
+	&:target,
+	&:target &__bg-close{
 		opacity: 1;
 		visibility: visible;
 	}
@@ -102,6 +104,20 @@
 				color: $color-green-medium;
 			}
 		}
+	}
+
+	&__bg-close {
+		display: inline-block;
+		width: 100vw;
+		height: 100vh;
+		cursor: default;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
 	}
 
 }

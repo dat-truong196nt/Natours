@@ -15,5 +15,6 @@ export const Popup = () => (
 				<a href="##" className="btn btn--green">book now</a>
 			</div>
 		</div>
+		<a href="##" className="popup__bg-close">{"abc"}</a>
 	</div>
 )
