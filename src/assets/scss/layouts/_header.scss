@@ -6,7 +6,17 @@
 			rgba($color-green-light, 0.8),
 			rgba($color-green-medium, 0.8)
 		),
+		url(../../img/hero-small.jpg);
+
+	@media (min-resolution: 192dpi) and (min-width: $breakpoint-phone), (min-width: 125em) {
+		background-image:
+		linear-gradient(
+			to bottom right ,
+			rgba($color-green-light, 0.8),
+			rgba($color-green-dark, 0.8)
+		),
 		url(../../img/hero.jpg);
+	}
 	background-size: cover;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	position: relative;

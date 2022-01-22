@@ -1,6 +1,9 @@
-import photo_nat_1 from '../assets/img/nat-1-large.jpg'
-import photo_nat_2 from '../assets/img/nat-2-large.jpg'
-import photo_nat_3 from '../assets/img/nat-3-large.jpg'
+import photo_nat_1 from '../assets/img/nat-1.jpg'
+import photo_nat_1_large from '../assets/img/nat-1-large.jpg'
+import photo_nat_2 from '../assets/img/nat-2.jpg'
+import photo_nat_2_large from '../assets/img/nat-2-large.jpg'
+import photo_nat_3 from '../assets/img/nat-3.jpg'
+import photo_nat_3_large from '../assets/img/nat-3-large.jpg'
 
 export const About = () => {
 	return (
@@ -35,20 +38,23 @@ export const About = () => {
 				<div className="col-1-2">
 					<div className="composition">
 						<img
-							src={photo_nat_1}
-							alt="nat 1"
+							srcSet={`${photo_nat_1} 300w, ${photo_nat_1_large} 1000w`}
+							sizes="(max-width: 900px) 27vw, (max-width: 600px) 32vw, 300px"
+							src={photo_nat_1_large}
 							className="composition__photo composition__photo-1"
-						/>
+							alt="nat 1" />
 						<img
-							src={photo_nat_2}
-							alt="nat 2"
+							srcSet={`${photo_nat_2} 300w, ${photo_nat_2_large} 1000w`}
+							sizes="(max-width: 900px) 27vw, (max-width: 600px) 32vw, 300px"
+							src={photo_nat_2_large}
 							className="composition__photo composition__photo-2"
-						/>
+							alt="nat 2" />
 						<img
-							src={photo_nat_3}
-							alt="nat 3"
+							srcSet={`${photo_nat_3} 300w, ${photo_nat_3_large} 1000w`}
+							sizes="(max-width: 900px) 27vw, (max-width: 600px) 32vw, 300px"
+							src={photo_nat_3_large}
 							className="composition__photo composition__photo-3"
-						/>
+							alt="nat 3" />
 					</div>
 				</div>
 			</div>
